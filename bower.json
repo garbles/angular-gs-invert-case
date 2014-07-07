@@ -1,0 +1,36 @@
+{
+  "name": "angular-gs-invert-case",
+  "version": "0.1.0",
+  "authors": [
+    "Gabriel Scholz <info@garbl.es>"
+  ],
+  "description": "Inverts the case (snake or camel) of an entire object",
+  "main": "./build/angular-gs-invert-case.js",
+  "keywords": [
+    "camel",
+    "snake",
+    "case",
+    "invert",
+    "angular"
+  ],
+  "license": "MIT",
+  "homepage": "https://github.com/garbles/angular-gs-invert-case",
+  "ignore": [
+    "src",
+    "node_modules",
+    "bower_components",
+    "test",
+    "karma.conf.js",
+    "package.json",
+    "Gulpfile.js"
+  ],
+  "dependencies": {
+    "angular": ">= 1.0.0",
+    "lodash": "~2.4.1",
+    "angular-gs-to-snake-case": "~0.1.1",
+    "angular-gs-to-camel-case": "~0.1.2"
+  },
+  "devDependencies": {
+    "angular-mocks": ">= 1.0.0"
+  }
+}
