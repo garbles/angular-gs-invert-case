@@ -1,6 +1,6 @@
 {
   "name": "angular-gs-invert-case",
-  "version": "0.1.1",
+  "version": "0.1.2",
   "private": true,
   "description": "Inverts the case (snake or camel) of an entire object",
   "main": "./build/angular-gs-invert-case.js",
