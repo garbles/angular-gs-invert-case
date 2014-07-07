@@ -61,6 +61,10 @@ gulp.task('lint', lint);
 var specFiles = [
   'bower_components/angular/angular.js',
   'bower_components/angular-mocks/angular-mocks.js',
+  'bower_components/lodash/dist/lodash.js',
+  'bower_components/angular-gs-to-camel-case/build/angular-gs-to-camel-case.js',
+  'bower_components/angular-gs-to-snake-case/build/angular-gs-to-snake-case.js',
+  'bower_components/angular-gs-capitalize/build/angular-gs-capitalize.js',
   'test/**/*.spec.js',
   'test/*.spec.js'
 ];

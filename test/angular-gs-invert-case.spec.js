@@ -1,22 +1,21 @@
 describe('angular-gs-invert-case', function () {
   beforeEach(module('gs.invert-case'));
 
-  var $scope;
+  var invertCase;
 
-  beforeEach(inject(function ($rootScope) {
-    $scope = $rootScope.$new();
+  beforeEach(inject(function (_invertCase_) {
+    invertCase = _invertCase_;
   }));
 
-  // happy path(s)
-  it('', function () {
+  it('inverts camelCase to snakeCase', function () {
+    var obj = { aeeBeeCee: 'gabe', deeEeeEff: 'chelsea', gee: 'doge' };
+
+    expect(invertCase(obj, 'snake')).toEqual({ aee_bee_cee: 'gabe', dee_eee_eff: 'chelsea', gee: 'doge' });
   });
 
-  // null input path
-  it('', function () {
-  });
+  it('inverts snakeCase to camelCase', function () {
+    var obj = { run_dog_run: 'go', bigHat: 'bye' };
 
-  // wrong type path
-  it('', function () {
+    expect(invertCase(obj, 'camel')).toEqual({ runDogRun: 'go', bigHat: 'bye' });
   });
-
 });
